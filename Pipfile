@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+beautifulsoup4 = "==4.9.1"
+bs4 = "==0.0.1"
+lxml = "==4.5.1"
+pyee = "==7.0.2"
+pyppeteer = "==0.2.2"
+requests = "==2.23.0"
+soupsieve = "==2.0.1"
+Django = "==2.2.14"
+
+[requires]
+python_version = "3.7"

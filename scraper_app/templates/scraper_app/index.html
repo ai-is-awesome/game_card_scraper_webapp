@@ -1,0 +1,35 @@
+{% extends 'scraper_app/base.html' %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}Welcome to Indeed Job Scraper % {% endblock title %}
+</head>
+<body>
+{% block content %}
+
+
+<div class = "jumbotron bgcolor-success header">
+
+	<h1>GAMING CARD SCRAPER</h1>
+
+</div>
+
+
+
+
+
+<div class = "card search-card">
+<form action = "{% url 'scrape_url' %}" method = "get">
+
+{{ form.as_p }}
+
+<input type="submit" value="Search" class = "btn btn-success">
+
+</form>
+</div>
+{% endblock content %}
+</body>
+</html>

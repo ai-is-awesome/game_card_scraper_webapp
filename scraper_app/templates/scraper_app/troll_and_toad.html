@@ -1,0 +1,40 @@
+{% extends 'scraper_app/base.html' %}
+
+{% block content %}
+<h1>Welcome to scrape</h1>
+
+
+
+<div class = "container">
+	{% for dict in results %}
+
+	<div class = "card">
+		<div class="text-desc">Product Title</div>{{ dict.product_title }}
+		<div class="text-desc">Product Price</div>{{ dict.price }}
+		<div class="text-desc">Product Link</div>{{ dict.link }}
+		<div class="text-desc">Product Category</div>{{ dict.product_category }}
+		<div class="text-desc">Product Condition</div>{{ dict.condition }}
+
+		
+	</div>
+
+	{% endfor %}
+</div>
+
+
+<div class = "container">
+	<div class = "card">
+		{'product_title': 'Sun & Moon Hidden Fates Booster Pack (Pokemon)', 'product_link': '/pokemon/pokemon-sealed-product/sun-moon-hidden-fates-booster-pack-pokemon-/1520971', 'product_category': '\nPokemon Sealed Product', 'condition': 'Pokemon Booster Pack ', 'price': '$11.98'}
+	</div>
+
+	<div class="card">
+
+		{'product_title': 'Sword & Shield Darkness Ablaze Booster Pack (Pokemon)', 'product_link': '/pokemon/sword-shield-darkness-ablaze-sealed-product/sword-shield-darkness-ablaze-booster-pack-pokemon-/1665732', 'product_category': '\nSword & Shield: Darkness Ablaze Sealed Product', 'condition': 'Pokemon Booster Pack ', 'price': '$3.05'}
+
+	</div>
+</div>
+
+
+
+
+{% endblock content %}
